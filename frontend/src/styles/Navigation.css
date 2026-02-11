@@ -1,7 +1,40 @@
-.navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.navbar-custom {
+  background: white !important;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.navbar-brand {
+.brand-logo {
   font-size: 1.5rem;
+  color: #667eea !important;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.brand-icon {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-custom .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #667eea !important;
+}
+
+.navbar-custom .btn-danger {
+  background: #dc3545;
+  border-color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .btn-danger:hover {
+  background: #c82333;
+  border-color: #c82333;
+  transform: scale(1.05);
 }

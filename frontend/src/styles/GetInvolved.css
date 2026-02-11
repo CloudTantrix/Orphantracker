@@ -1,0 +1,45 @@
+/* Get Involved Page Styles */
+.get-involved-page {
+  background: white;
+}
+
+.involved-hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 3rem 0;
+}
+
+.involved-hero h1 {
+  color: #333;
+}
+
+.involvement-card {
+  border-radius: 8px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.involvement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.involvement-card .card-title {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.involvement-card ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.involvement-card li {
+  list-style: none;
+  padding: 0.25rem 0;
+}
+
+@media (max-width: 768px) {
+  .involved-hero h1 {
+    font-size: 2rem;
+  }
+}
