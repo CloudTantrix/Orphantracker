@@ -38,7 +38,7 @@ function Contact() {
                       +1 (234) 567-8900
                     </a>
                   </Card.Text>
-                  <small className="text-muted d-block\">Monday - Friday, 9AM - 5PM</small>
+                  <small className="text-muted d-block">Monday - Friday, 9AM - 5PM</small>
                 </Card.Body>
               </Card>
             </Col>
@@ -47,13 +47,13 @@ function Contact() {
               <Card className="contact-card shadow-sm border-0 h-100">
                 <Card.Body className="text-center">
                   <div className="mb-3" style={{ fontSize: '2rem' }}>📧</div>
-                  <Card.Title className="fw-bold\">Email</Card.Title>
+                  <Card.Title className="fw-bold">Email</Card.Title>
                   <Card.Text className="text-muted">
                     <a href="mailto:info@orphantracker.org" className="text-decoration-none">
                       info@orphantracker.org
                     </a>
                   </Card.Text>
-                  <small className="text-muted d-block\">We respond within 24 hours</small>
+                  <small className="text-muted d-block">We respond within 24 hours</small>
                 </Card.Body>
               </Card>
             </Col>
@@ -62,12 +62,12 @@ function Contact() {
               <Card className="contact-card shadow-sm border-0 h-100">
                 <Card.Body className="text-center">
                   <div className="mb-3" style={{ fontSize: '2rem' }}>📍</div>
-                  <Card.Title className="fw-bold">Location</Card.Title>
+                  <Card.Title className="fw-bold">Address</Card.Title>
                   <Card.Text className="text-muted">
-                    123 Care Street<br />
-                    Hope City, ST 12345
+                    123 Hope Street<br />
+                    New York, NY 10001
                   </Card.Text>
-                  <small className="text-muted d-block">Visit us by appointment</small>
+                  <small className="text-muted d-block">Visit us anytime</small>
                 </Card.Body>
               </Card>
             </Col>
@@ -75,78 +75,106 @@ function Contact() {
         </Container>
       </section>
 
-      {/* Contact Form */}
+      {/* Contact Form Section */}
       <section className="py-5 bg-light">
         <Container>
           <Row className="mb-5">
             <Col lg={8} className="offset-lg-2">
-              <h2 className="h2 fw-bold mb-4 text-center">Send us a Message</h2>
-              <div className="bg-white p-5 rounded shadow-sm">
-                <Form onSubmit={handleSubmit}>
-                  <Form.Group className="mb-3">
-                    <Form.Label>Full Name *</Form.Label>
-                    <Form.Control type="text" placeholder="Your name" required />
-                  </Form.Group>
+              <h2 className="h2 fw-bold mb-5 text-center">Send us a Message</h2>
+              
+              <Card className="shadow-lg border-0">
+                <Card.Body className="p-5">
+                  <Form onSubmit={handleSubmit}>
+                    <Form.Group className="mb-4">
+                      <Form.Label className="fw-bold">Full Name</Form.Label>
+                      <Form.Control 
+                        type="text" 
+                        placeholder="Your Name"
+                        required
+                      />
+                    </Form.Group>
 
-                  <Form.Group className="mb-3">
-                    <Form.Label>Email *</Form.Label>
-                    <Form.Control type="email" placeholder="your@email.com" required />
-                  </Form.Group>
+                    <Form.Group className="mb-4">
+                      <Form.Label className="fw-bold">Email Address</Form.Label>
+                      <Form.Control 
+                        type="email" 
+                        placeholder="your@email.com"
+                        required
+                      />
+                    </Form.Group>
 
-                  <Form.Group className="mb-3">
-                    <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type="tel" placeholder="(555) 123-4567" />
-                  </Form.Group>
+                    <Form.Group className="mb-4">
+                      <Form.Label className="fw-bold">Subject</Form.Label>
+                      <Form.Control 
+                        type="text" 
+                        placeholder="What is this about?"
+                        required
+                      />
+                    </Form.Group>
 
-                  <Form.Group className="mb-3">
-                    <Form.Label>Subject *</Form.Label>
-                    <Form.Select required>
-                      <option value="">Select a subject</option>
-                      <option value="donation">Donation Inquiry</option>
-                      <option value="volunteer">Volunteer Opportunity</option>
-                      <option value="partnership">Corporate Partnership</option>
-                      <option value="report">Report an Issue</option>
-                      <option value="other">Other</option>
-                    </Form.Select>
-                  </Form.Group>
+                    <Form.Group className="mb-4">
+                      <Form.Label className="fw-bold">Message</Form.Label>
+                      <Form.Control 
+                        as="textarea" 
+                        rows={5}
+                        placeholder="Tell us more..."
+                        required
+                      />
+                    </Form.Group>
 
-                  <Form.Group className="mb-3">
-                    <Form.Label>Message *</Form.Label>
-                    <Form.Control 
-                      as="textarea" 
-                      rows={5} 
-                      placeholder="Your message here..." 
-                      required 
-                    />
-                  </Form.Group>
-
-                  <Button variant="primary" type="submit" size="lg" className="w-100">
-                    Send Message
-                  </Button>
-                </Form>
-              </div>
+                    <Button 
+                      variant="primary" 
+                      size="lg" 
+                      type="submit"
+                      className="w-100 fw-bold"
+                    >
+                      Send Message
+                    </Button>
+                  </Form>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
       </section>
 
-      {/* Office Hours */}
+      {/* FAQ Section */}
       <section className="py-5">
         <Container>
           <Row className="mb-5">
             <Col lg={8} className="offset-lg-2">
-              <h2 className="h2 fw-bold mb-4 text-center">Office Hours</h2>
-              <div className="office-hours text-center">
-                <p className="lead mb-3"><strong>Monday - Friday</strong></p>
-                <p className="text-muted mb-4">9:00 AM - 5:00 PM</p>
-                
-                <p className="lead mb-3"><strong>Saturday</strong></p>
-                <p className="text-muted mb-4">10:00 AM - 2:00 PM</p>
-                
-                <p className="lead mb-3"><strong>Sunday</strong></p>
-                <p className="text-muted mb-4">Closed</p>
-                
-                <p className="text-muted mt-4\">\n                  <strong>Emergency Support:</strong> Available 24/7 for urgent matters\n                </p>
+              <h2 className="h2 fw-bold mb-5 text-center">Frequently Asked Questions</h2>
+              
+              <div className="faq-item mb-4 pb-4 border-bottom">
+                <h5 className="fw-bold mb-3">What is your response time?</h5>
+                <p className="text-muted mb-0">
+                  We aim to respond to all inquiries within 24 business hours. 
+                  For urgent matters, please call us directly.
+                </p>
+              </div>
+
+              <div className="faq-item mb-4 pb-4 border-bottom">
+                <h5 className="fw-bold mb-3">Are you hiring?</h5>
+                <p className="text-muted mb-0">
+                  Yes! We're always looking for passionate team members. 
+                  Check our careers page or email us with your CV.
+                </p>
+              </div>
+
+              <div className="faq-item mb-4 pb-4 border-bottom">
+                <h5 className="fw-bold mb-3">Can I volunteer?</h5>
+                <p className="text-muted mb-0">
+                  Absolutely! We welcome volunteers. Visit our Get Involved page 
+                  to learn about volunteer opportunities.
+                </p>
+              </div>
+
+              <div className="faq-item">
+                <h5 className="fw-bold mb-3">How can I partner with you?</h5>
+                <p className="text-muted mb-0">
+                  We'd love to explore partnerships. Please contact us directly 
+                  to discuss collaboration opportunities.
+                </p>
               </div>
             </Col>
           </Row>

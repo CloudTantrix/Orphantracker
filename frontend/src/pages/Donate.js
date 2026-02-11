@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
 import '../styles/Donate.css';
 
 function Donate() {
-  const [donationAmount, setDonationAmount] = useState(50);
-  const [donationType, setDonationType] = useState('once');
-
-  const presetAmounts = [10, 25, 50, 100, 250, 500];
 
   return (
     <div className="donate-page">
@@ -24,170 +20,193 @@ function Donate() {
         </Container>
       </section>
 
-      {/* Donation Section */}
+      {/* Impact Section */}
+      <section className="py-5 bg-light">
+        <Container>
+          <Row className="mb-5">
+            <Col lg={12} className="text-center">
+              <h2 className="h2 fw-bold mb-5">Your Impact</h2>
+            </Col>
+          </Row>
+          <Row className="g-4">
+            <Col md={4}>
+              <Card className="shadow-sm border-0 text-center p-4">
+                <div style={{ fontSize: '2.5rem' }} className="mb-3">📚</div>
+                <h5 className="fw-bold">$25</h5>
+                <p className="text-muted mb-0">Provides educational materials for one child</p>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="shadow-sm border-0 text-center p-4">
+                <div style={{ fontSize: '2.5rem' }} className="mb-3">🏥</div>
+                <h5 className="fw-bold">$50</h5>
+                <p className="text-muted mb-0">Covers medical check-up and care</p>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="shadow-sm border-0 text-center p-4">
+                <div style={{ fontSize: '2.5rem' }} className="mb-3">🏠</div>
+                <h5 className="fw-bold">$100</h5>
+                <p className="text-muted mb-0">One week of safe shelter and meals</p>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Donation Form */}
       <section className="py-5">
         <Container>
-          <Row>
+          <Row className="mb-5">
             <Col lg={8} className="offset-lg-2">
-              <Card className="shadow-sm border-0">
+              <Card className="shadow-lg border-0">
                 <Card.Body className="p-5">
-                  <h2 className="h3 fw-bold mb-4">Your Generous Gift</h2>
-
-                  {/* Donation Type */}
-                  <Form.Group className="mb-4">
-                    <Form.Label className="fw-bold mb-3\">Donation Type</Form.Label>
-                    <div className="d-flex gap-3">
-                      <Form.Check
-                        type="radio"
-                        id="once"
-                        name="donationType"
-                        label="One-Time Donation"
-                        value="once"
-                        checked={donationType === 'once'}
-                        onChange={(e) => setDonationType(e.target.value)}
+                  <h3 className="fw-bold mb-4">Make Your Donation</h3>
+                  
+                  {/* Donation Type Selection */}
+                  <div className="mb-4">
+                    <label className="fw-bold mb-3 d-block">Donation Type</label>
+                    <div className="btn-group w-100" role="group">
+                      <input 
+                        type="radio" 
+                        className="btn-check" 
+                        name="donationType" 
+                        id="oneTime" 
+                        defaultChecked
                       />
-                      <Form.Check
-                        type="radio"
+                      <label className="btn btn-outline-primary" htmlFor="oneTime">
+                        One-Time
+                      </label>
+                      
+                      <input 
+                        type="radio" 
+                        className="btn-check" 
+                        name="donationType" 
                         id="monthly"
-                        name="donationType"
-                        label="Monthly Giving"
-                        value="monthly"
-                        checked={donationType === 'monthly'}
-                        onChange={(e) => setDonationType(e.target.value)}
                       />
+                      <label className="btn btn-outline-primary" htmlFor="monthly">
+                        Monthly
+                      </label>
                     </div>
-                  </Form.Group>
+                  </div>
 
                   {/* Amount Selection */}
-                  <Form.Group className="mb-4">
-                    <Form.Label className="fw-bold mb-3">Select Amount</Form.Label>
-                    <div className="d-flex flex-wrap gap-2 mb-3">
-                      {presetAmounts.map((amount) => (
-                        <Button
-                          key={amount}
-                          variant={donationAmount === amount ? 'primary' : 'outline-primary'}
-                          className="flex-grow-1"
-                          onClick={() => setDonationAmount(amount)}
-                        >
-                          ${amount}
-                        </Button>
+                  <div className="mb-4">
+                    <label className="fw-bold mb-3 d-block">Select Amount</label>
+                    <Row className="g-2">
+                      {[25, 50, 100, 250, 500, 1000].map((amount) => (
+                        <Col xs={6} sm={4} lg={2} key={amount}>
+                          <Button 
+                            variant="outline-secondary" 
+                            className="w-100"
+                          >
+                            ${amount}
+                          </Button>
+                        </Col>
                       ))}
+                    </Row>
+                    <div className="mt-3">
+                      <Form.Control 
+                        type="number" 
+                        placeholder="Enter custom amount" 
+                        min="1"
+                        className="text-center"
+                      />
                     </div>
-                    <Form.Control
-                      type="number"
-                      placeholder="Or enter custom amount"
-                      value={donationAmount}
-                      onChange={(e) => setDonationAmount(Number(e.target.value))}
-                      min="1"
-                      className="mt-3"
-                    />
-                  </Form.Group>
-
-                  {/* Impact Messaging */}
-                  <div className="bg-light p-4 rounded mb-4\">
-                    <h5 className="fw-bold mb-3\">Your Impact</h5>
-                    {donationAmount >= 10 && (
-                      <p className="text-muted mb-2\">
-                        💝 ${donationAmount} provides essential supplies for one child
-                      </p>
-                    )}
-                    {donationAmount >= 50 && (
-                      <p className="text-muted mb-2\">
-                        🎓 ${donationAmount} funds tutoring sessions
-                      </p>
-                    )}
-                    {donationAmount >= 100 && (
-                      <p className="text-muted mb-2\">
-                        🏥 ${donationAmount} covers medical checkup and care
-                      </p>
-                    )}
-                    {donationAmount >= 250 && (
-                      <p className="text-muted mb-2\">
-                        📚 ${donationAmount} sponsors a child's education for a month
-                      </p>
-                    )}
-                    {donationAmount >= 500 && (
-                      <p className="text-muted mb-0\">
-                        🌟 ${donationAmount} fully supports a child's monthly comprehensive care
-                      </p>
-                    )}
                   </div>
 
                   {/* Donor Information */}
-                  <h5 className=\"fw-bold mb-3 mt-4\">Donor Information</h5>
+                  <div className="mb-4 pb-4 border-bottom">
+                    <label className="fw-bold mb-3 d-block">Your Information</label>
+                    <Form.Group className="mb-3">
+                      <Form.Label>Full Name</Form.Label>
+                      <Form.Control 
+                        type="text" 
+                        placeholder="John Doe"
+                      />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                      <Form.Label>Email Address</Form.Label>
+                      <Form.Control 
+                        type="email" 
+                        placeholder="john@example.com"
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Phone Number (Optional)</Form.Label>
+                      <Form.Control 
+                        type="tel" 
+                        placeholder="(555) 000-0000"
+                      />
+                    </Form.Group>
+                  </div>
 
-                  <Form.Group className=\"mb-3\">
-                    <Form.Label>Full Name *</Form.Label>
-                    <Form.Control type=\"text\" placeholder=\"Your name\" required />
-                  </Form.Group>
+                  {/* Payment Method */}
+                  <div className="mb-4">
+                    <label className="fw-bold mb-3 d-block">Payment Method</label>
+                    <Row className="g-3">
+                      <Col md={6}>
+                        <input 
+                          type="radio" 
+                          className="btn-check" 
+                          name="payment" 
+                          id="credit"
+                          defaultChecked
+                        />
+                        <label className="btn btn-outline-primary w-100" htmlFor="credit">
+                          💳 Credit Card
+                        </label>
+                      </Col>
+                      <Col md={6}>
+                        <input 
+                          type="radio" 
+                          className="btn-check" 
+                          name="payment" 
+                          id="paypal"
+                        />
+                        <label className="btn btn-outline-primary w-100" htmlFor="paypal">
+                          🅿️ PayPal
+                        </label>
+                      </Col>
+                    </Row>
+                  </div>
 
-                  <Form.Group className=\"mb-3\">
-                    <Form.Label>Email *</Form.Label>
-                    <Form.Control type=\"email\" placeholder=\"your@email.com\" required />
-                  </Form.Group>
-
-                  <Form.Group className=\"mb-3\">
-                    <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type=\"tel\" placeholder=\"(555) 123-4567\" />
-                  </Form.Group>
-
-                  {/* Payment Information */}
-                  <h5 className=\"fw-bold mb-3 mt-4\">Payment Information</h5>
-
-                  <Form.Group className=\"mb-3\">
-                    <Form.Label>Card Number *</Form.Label>
-                    <Form.Control 
-                      type=\"text\" 
-                      placeholder=\"1234 5678 9012 3456\" 
-                      required 
+                  {/* Recurring Donation */}
+                  <div className="mb-4 pb-4 border-bottom">
+                    <Form.Check 
+                      type="checkbox" 
+                      id="recurring"
+                      label="I would like this donation to recur monthly"
+                      className="fs-5"
                     />
-                  </Form.Group>
+                  </div>
 
-                  <Row>
-                    <Col md={6}>
-                      <Form.Group className=\"mb-3\">
-                        <Form.Label>Expiry Date *</Form.Label>
-                        <Form.Control 
-                          type=\"text\" 
-                          placeholder=\"MM/YY\" 
-                          required 
-                        />
-                      </Form.Group>
-                    </Col>
-                    <Col md={6}>
-                      <Form.Group className=\"mb-3\">
-                        <Form.Label>CVV *</Form.Label>
-                        <Form.Control 
-                          type=\"text\" 
-                          placeholder=\"123\" 
-                          required 
-                        />
-                      </Form.Group>
-                    </Col>
-                  </Row>
+                  {/* Donation Dedication */}
+                  <div className="mb-4">
+                    <Form.Check 
+                      type="checkbox" 
+                      id="dedication"
+                      label="This donation is in memory of / in honor of someone"
+                      className="fs-5"
+                    />
+                    <Form.Control 
+                      type="text" 
+                      placeholder="Name (optional)" 
+                      className="mt-3"
+                    />
+                  </div>
 
-                  {/* Donation Options */}
-                  <Form.Check className=\"mb-3\" type=\"checkbox\">
-                    <Form.Check.Input />
-                    <Form.Check.Label>
-                      Make this donation anonymous
-                    </Form.Check.Label>
-                  </Form.Check>
-
-                  <Form.Check className=\"mb-4\" type=\"checkbox\">
-                    <Form.Check.Input defaultChecked />
-                    <Form.Check.Label>
-                      I'd like to receive updates about my impact
-                    </Form.Check.Label>
-                  </Form.Check>
-
-                  {/* Donate Button */}
-                  <Button variant=\"primary\" size=\"lg\" className=\"w-100 fw-bold\">
-                    Donate ${donationAmount} {donationType === 'monthly' ? '/ Month' : ''}
+                  {/* Submit Button */}
+                  <Button 
+                    variant="primary" 
+                    size="lg" 
+                    className="w-100 fw-bold py-3"
+                  >
+                    Proceed to Payment →
                   </Button>
 
-                  <p className=\"text-muted text-center mt-3 small\">
-                    Your donation is secure and encrypted. We never share your information.
+                  <p className="text-center text-muted mt-4 mb-0">
+                    ✓ 100% secure • Encrypted payment • Tax-deductible
                   </p>
                 </Card.Body>
               </Card>
@@ -197,46 +216,46 @@ function Donate() {
       </section>
 
       {/* Other Ways to Give */}
-      <section className=\"py-5 bg-light\">
+      <section className="py-5 bg-light">
         <Container>
-          <Row className=\"mb-5\">
-            <Col lg={12} className=\"text-center\">
-              <h2 className=\"h2 fw-bold mb-5\">Other Ways to Give</h2>
+          <Row className="mb-5">
+            <Col lg={12} className="text-center">
+              <h2 className="h2 fw-bold mb-5">Other Ways to Give</h2>
             </Col>
           </Row>
-          <Row className=\"g-4\">
+          <Row className="g-4">
             <Col md={6} lg={3}>
-              <Card className=\"shadow-sm border-0 text-center p-4 h-100\">
-                <div style={{ fontSize: '2rem' }} className=\"mb-3\">🏦</div>
-                <Card.Title className=\"fw-bold\">Bank Transfer</Card.Title>
-                <Card.Text className=\"text-muted\">
+              <Card className="shadow-sm border-0 text-center p-4 h-100">
+                <div style={{ fontSize: '2rem' }} className="mb-3">🏦</div>
+                <Card.Title className="fw-bold">Bank Transfer</Card.Title>
+                <Card.Text className="text-muted">
                   Direct bank transfers for larger donations
                 </Card.Text>
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className=\"shadow-sm border-0 text-center p-4 h-100\">
-                <div style={{ fontSize: '2rem' }} className=\"mb-3\">📱</div>
-                <Card.Title className=\"fw-bold\">Mobile Payment</Card.Title>
-                <Card.Text className=\"text-muted\">
+              <Card className="shadow-sm border-0 text-center p-4 h-100">
+                <div style={{ fontSize: '2rem' }} className="mb-3">📱</div>
+                <Card.Title className="fw-bold">Mobile Payment</Card.Title>
+                <Card.Text className="text-muted">
                   PayPal, Apple Pay, Google Pay
                 </Card.Text>
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className=\"shadow-sm border-0 text-center p-4 h-100\">
-                <div style={{ fontSize: '2rem' }} className=\"mb-3\">📦</div>
-                <Card.Title className=\"fw-bold\">In-Kind Gifts</Card.Title>
-                <Card.Text className=\"text-muted\">
+              <Card className="shadow-sm border-0 text-center p-4 h-100">
+                <div style={{ fontSize: '2rem' }} className="mb-3">📦</div>
+                <Card.Title className="fw-bold">In-Kind Gifts</Card.Title>
+                <Card.Text className="text-muted">
                   Donate supplies and goods
                 </Card.Text>
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className=\"shadow-sm border-0 text-center p-4 h-100\">
-                <div style={{ fontSize: '2rem' }} className=\"mb-3\">💝</div>
-                <Card.Title className=\"fw-bold\">Stock Donation</Card.Title>
-                <Card.Text className=\"text-muted\">
+              <Card className="shadow-sm border-0 text-center p-4 h-100">
+                <div style={{ fontSize: '2rem' }} className="mb-3">💝</div>
+                <Card.Title className="fw-bold">Stock Donation</Card.Title>
+                <Card.Text className="text-muted">
                   Tax-advantaged giving
                 </Card.Text>
               </Card>
@@ -246,39 +265,39 @@ function Donate() {
       </section>
 
       {/* FAQ */}
-      <section className=\"py-5\">
+      <section className="py-5">
         <Container>
-          <Row className=\"mb-5\">
-            <Col lg={8} className=\"offset-lg-2\">
-              <h2 className=\"h2 fw-bold mb-5 text-center\">Frequently Asked Questions</h2>
+          <Row className="mb-5">
+            <Col lg={8} className="offset-lg-2">
+              <h2 className="h2 fw-bold mb-5 text-center">Frequently Asked Questions</h2>
               
-              <div className=\"faq-item mb-4 pb-4 border-bottom\">
-                <h5 className=\"fw-bold mb-3\">Is my donation tax-deductible?</h5>
-                <p className=\"text-muted mb-0\">
+              <div className="faq-item mb-4 pb-4 border-bottom">
+                <h5 className="fw-bold mb-3">Is my donation tax-deductible?</h5>
+                <p className="text-muted mb-0">
                   Yes! Orphan Tracker is a registered 501(c)(3) nonprofit organization. 
                   All donations are tax-deductible to the extent allowed by law.
                 </p>
               </div>
 
-              <div className=\"faq-item mb-4 pb-4 border-bottom\">
-                <h5 className=\"fw-bold mb-3\">How is my donation used?</h5>
-                <p className=\"text-muted mb-0\">
+              <div className="faq-item mb-4 pb-4 border-bottom">
+                <h5 className="fw-bold mb-3">How is my donation used?</h5>
+                <p className="text-muted mb-0">
                   100% of your donation supports our programs. Administrative costs are covered 
                   by grants and board-level giving. View our annual report for detailed breakdown.
                 </p>
               </div>
 
-              <div className=\"faq-item mb-4 pb-4 border-bottom\">
-                <h5 className=\"fw-bold mb-3\">Can I cancel my monthly donation?</h5>
-                <p className=\"text-muted mb-0\">
+              <div className="faq-item mb-4 pb-4 border-bottom">
+                <h5 className="fw-bold mb-3">Can I cancel my monthly donation?</h5>
+                <p className="text-muted mb-0">
                   Yes, you can cancel anytime with no penalties. Simply contact us or manage 
                   your subscription in your account dashboard.
                 </p>
               </div>
 
-              <div className=\"faq-item\">
-                <h5 className=\"fw-bold mb-3\">Is my payment information secure?</h5>
-                <p className=\"text-muted mb-0\">
+              <div className="faq-item">
+                <h5 className="fw-bold mb-3">Is my payment information secure?</h5>
+                <p className="text-muted mb-0">
                   Your payment information is encrypted using industry-standard SSL technology. 
                   We never store your credit card information on our servers.
                 </p>
