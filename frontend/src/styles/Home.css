@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 6rem 0;
+  padding: 6rem 2rem;
 }
 
 .hero-overlay {
@@ -31,6 +31,8 @@
   z-index: 2;
   max-width: 800px;
   text-align: center;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .hero-section h1 {
@@ -40,6 +42,8 @@
   margin-bottom: 1.5rem;
   font-weight: 800;
   letter-spacing: -1px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero-section .lead {
@@ -49,6 +53,8 @@
   margin-bottom: 2.5rem;
   font-weight: 500;
   line-height: 1.8;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero-buttons {
@@ -210,12 +216,17 @@
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 1rem;
+    min-height: auto;
+  }
+
   .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .hero-section .lead {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   h2 {
@@ -234,10 +245,30 @@
   .cta-buttons {
     flex-direction: column;
   }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 2rem 0.75rem;
+    min-height: auto;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section .lead {
+    font-size: 0.9rem;
+  }
+
+  .hero-content {
+    padding: 0 0.5rem;
+  }
 
   .hero-buttons .btn,
   .cta-buttons .btn {
     width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -256,16 +287,8 @@
   font-size: 2.5rem;
 }
 
-/* Responsive */
+/* Responsive CTA */
 @media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2rem;
-  }
-
-  .hero-section .lead {
-    font-size: 1rem;
-  }
-
   .stat-card {
     padding: 1.5rem 1rem;
   }

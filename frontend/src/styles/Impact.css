@@ -5,8 +5,13 @@
 
 .impact-hero {
   background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
-  padding: 5rem 0;
+  padding: 8rem 2rem;
   color: #ffffff;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .impact-hero h1 {
@@ -15,11 +20,15 @@
   font-weight: 800;
   margin-bottom: 1rem;
   letter-spacing: -1px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .impact-hero p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.25rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .stat-box {
