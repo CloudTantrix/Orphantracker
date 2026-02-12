@@ -1,31 +1,100 @@
 /* Contact Page Styles */
 .contact-page {
-  background: white;
+  background: #ffffff;
 }
 
 .contact-hero {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding: 3rem 0;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+  padding: 5rem 0;
+  color: #ffffff;
 }
 
 .contact-hero h1 {
-  color: #333;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.contact-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
 }
 
 .contact-card {
-  border-radius: 8px;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  padding: 2.5rem 2rem;
+  text-align: center;
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15);
+  border-color: #2563eb;
 }
 
-.contact-card .card-body {
-  padding: 2rem 1rem;
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.contact-card h5 {
+  font-size: 1.3rem;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.contact-card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  color: #1e40af;
+}
+
+.contact-form-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-card .card-body {
+  padding: 3rem 2.5rem;
+}
+
+.faq-item {
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-item h5 {
+  font-size: 1.15rem;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0;
 }
 
 .contact-card a {

@@ -10,23 +10,24 @@ function Home() {
       <section className="hero-section">
         <div className="hero-overlay"></div>
         <Container>
-          <Row className="align-items-center min-vh-100">
-            <Col lg={8} className="hero-content">
+          <Row className="align-items-center" style={{ minHeight: '80vh' }}>
+            <Col lg={10} className="hero-content">
               <h1 className="display-3 fw-bold mb-4 text-white">
-                Hope, Healing, and Justice
+                Protecting Children's Future Across Nepal
               </h1>
-              <p className="lead text-white mb-4" style={{ fontSize: '1.5rem' }}>
-                Breaking the cycle of abandonment, one child at a time.
+              <p className="lead text-white mb-5" style={{ fontSize: '1.4rem', lineHeight: '1.8' }}>
+                We monitor, track, and support orphaned children across Nepal until they become self-reliant citizens. 
+                Together, we create a safe environment where every child can thrive.
               </p>
-              <div className="d-flex gap-3">
-                <Link to="/donate">
-                  <Button variant="danger" size="lg" className="px-5 py-3">
-                    💝 Donate Now
+              <div className="hero-buttons">
+                <Link to="/file-complaint">
+                  <Button variant="warning" size="lg" className="px-5 py-3 fw-bold">
+                    📋 Report a Case
                   </Button>
                 </Link>
-                <Link to="/about">
-                  <Button variant="light" size="lg" className="px-5 py-3 text-dark">
-                    Learn More
+                <Link to="/donate">
+                  <Button variant="light" size="lg" className="px-5 py-3 text-dark fw-bold">
+                    💝 Support Us
                   </Button>
                 </Link>
               </div>
@@ -35,138 +36,180 @@ function Home() {
         </Container>
       </section>
 
-      {/* Mission Section */}
-      <section className="mission-section py-5">
+      {/* Our Focus - What We Do */}
+      <section className="py-6">
         <Container>
-          <Row className="align-items-center mb-5">
-            <Col lg={12} className="text-center">
-              <h2 className="h1 mb-4 fw-bold">Our Mission</h2>
-              <p className="lead text-muted mb-0" style={{ fontSize: '1.25rem' }}>
-                We are dedicated to providing comprehensive support to orphaned and abandoned 
-                children by tracking their welfare, coordinating care, and ensuring they receive 
-                the resources they need to thrive.
+          <Row className="mb-5">
+            <Col lg={12} className="text-center mb-5">
+              <h2 className="fw-bold mb-3">What We Do</h2>
+              <p className="lead text-secondary" style={{ maxWidth: '700px', margin: '0 auto' }}>
+                Our comprehensive approach ensures every child in our network receives protection, care, and opportunity
               </p>
+            </Col>
+          </Row>
+          <Row className="g-4">
+            <Col md={6} lg={4}>
+              <Card className="service-card h-100">
+                <Card.Body className="text-center">
+                  <div className="service-icon mb-3">📍</div>
+                  <Card.Title className="fw-bold mb-3">Track & Monitor</Card.Title>
+                  <Card.Text className="text-secondary">
+                    We maintain detailed records of orphaned children across Nepal, tracking their welfare and development from childhood until they become self-reliant at 18.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6} lg={4}>
+              <Card className="service-card h-100">
+                <Card.Body className="text-center">
+                  <div className="service-icon mb-3">⚖️</div>
+                  <Card.Title className="fw-bold mb-3">File & Investigate Complaints</Card.Title>
+                  <Card.Text className="text-secondary">
+                    Anyone can directly report child welfare concerns with detailed information. We investigate all complaints and take action to protect vulnerable children.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6} lg={4}>
+              <Card className="service-card h-100">
+                <Card.Body className="text-center">
+                  <div className="service-icon mb-3">🤝</div>
+                  <Card.Title className="fw-bold mb-3">Provide Support</Card.Title>
+                  <Card.Text className="text-secondary">
+                    We connect children with essential services, guardians, education programs, and build a network of support for their development.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6} lg={4}>
+              <Card className="service-card h-100">
+                <Card.Body className="text-center">
+                  <div className="service-icon mb-3">🏛️</div>
+                  <Card.Title className="fw-bold mb-3">Monitor Orphanages</Card.Title>
+                  <Card.Text className="text-secondary">
+                    We track and assess orphanage facilities across Nepal, maintaining transparency and accountability to ensure children's safety and welfare.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6} lg={4}>
+              <Card className="service-card h-100">
+                <Card.Body className="text-center">
+                  <div className="service-icon mb-3">🧠</div>
+                  <Card.Title className="fw-bold mb-3">Build Awareness</Card.Title>
+                  <Card.Text className="text-secondary">
+                    We create mindfulness and consciousness about child welfare issues, turning supporters into advocates for children's rights.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6} lg={4}>
+              <Card className="service-card h-100">
+                <Card.Body className="text-center">
+                  <div className="service-icon mb-3">❤️</div>
+                  <Card.Title className="fw-bold mb-3">Sustain Through Donations</Card.Title>
+                  <Card.Text className="text-secondary">
+                    Your donations fuel our programs, support children's needs, and help us expand our reach across Nepal's vulnerable communities.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
       </section>
 
       {/* Impact Stats */}
-      <section className="impact-stats py-5 bg-light">
+      <section className="impact-stats py-6 bg-light">
         <Container>
-          <Row className="text-center g-4 mb-5">
-            <Col md={3}>
+          <Row className="mb-5">
+            <Col lg={12} className="text-center">
+              <h2 className="fw-bold mb-3">Our Impact in Nepal</h2>
+            </Col>
+          </Row>
+          <Row className="g-4">
+            <Col md={6} lg={3}>
               <div className="stat-card">
-                <h3 className="display-4 text-primary fw-bold">2,500+</h3>
-                <p className="lead">Children Supported</p>
+                <h3 className="stat-number">2,500+</h3>
+                <p className="stat-label">Children Tracked & Supported</p>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={6} lg={3}>
               <div className="stat-card">
-                <h3 className="display-4 text-success fw-bold">1,200+</h3>
-                <p className="lead">Guardians Engaged</p>
+                <h3 className="stat-number">145</h3>
+                <p className="stat-label">Orphanages Monitored</p>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={6} lg={3}>
               <div className="stat-card">
-                <h3 className="display-4 text-info fw-bold">800+</h3>
-                <p className="lead">Volunteers</p>
+                <h3 className="stat-number">500+</h3>
+                <p className="stat-label">Complaints Investigated</p>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={6} lg={3}>
               <div className="stat-card">
-                <h3 className="display-4 text-warning fw-bold">98%</h3>
-                <p className="lead">Placement Success</p>
+                <h3 className="stat-number">98%</h3>
+                <p className="stat-label">Safety Assessment Rate</p>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
 
-      {/* Services Overview */}
-      <section className="services-section py-5">
+      {/* Why It Matters */}
+      <section className="py-6">
         <Container>
-          <Row className="mb-5">
-            <Col lg={12} className="text-center">
-              <h2 className="h1 fw-bold mb-4">How We Help</h2>
-              <p className="lead text-muted mb-0">Comprehensive services to support children and families</p>
+          <Row className="align-items-center">
+            <Col lg={6} className="mb-4 mb-lg-0">
+              <h2 className="fw-bold mb-4">Why This Matters</h2>
+              <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
+                Thousands of children across Nepal live without proper support or protection. 
+                Many orphanages operate without accountability, and vulnerable children have no voice.
+              </p>
+              <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
+                Orphan Tracker Nepal changes this by:
+              </p>
+              <ul className="text-secondary" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
+                <li>📋 Creating transparent systems to track child welfare</li>
+                <li>⚖️ Empowering communities to report and stop abuse</li>
+                <li>🛡️ Ensuring every child's safety is monitored</li>
+                <li>🧠 Building a generation of conscious, aware citizens</li>
+              </ul>
             </Col>
-          </Row>
-          <Row className="g-4">
-            <Col md={6} lg={3}>
-              <Card className="service-card shadow-sm h-100">
-                <Card.Body className="text-center">
-                  <div className="service-icon mb-3">📋</div>
-                  <Card.Title>Case Management</Card.Title>
-                  <Card.Text className="text-muted">
-                    Track and manage comprehensive care plans for each child
-                  </Card.Text>
+            <Col lg={6}>
+              <Card className="shadow-lg border-0">
+                <Card.Body className="p-5 bg-light-blue">
+                  <h4 className="fw-bold mb-3">Our Motto</h4>
+                  <p style={{ fontSize: '1.2rem', fontStyle: 'italic', color: '#2563eb', fontWeight: '600' }}>
+                    "Protecting Children's Welfare • Creating Safe Environments • Building Conscious Citizens"
+                  </p>
                 </Card.Body>
               </Card>
-            </Col>
-            <Col md={6} lg={3}>
-              <Card className="service-card shadow-sm h-100">
-                <Card.Body className="text-center">
-                  <div className="service-icon mb-3">👥</div>
-                  <Card.Title>Guardian Matching</Card.Title>
-                  <Card.Text className="text-muted">
-                    Connect children with caring and qualified guardians
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={3}>
-              <Card className="service-card shadow-sm h-100">
-                <Card.Body className="text-center">
-                  <div className="service-icon mb-3">🏥</div>
-                  <Card.Title>Health & Wellness</Card.Title>
-                  <Card.Text className="text-muted">
-                    Ensure access to medical care and mental health support
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={3}>
-              <Card className="service-card shadow-sm h-100">
-                <Card.Body className="text-center">
-                  <div className="service-icon mb-3">📚</div>
-                  <Card.Title>Education Support</Card.Title>
-                  <Card.Text className="text-muted">
-                    Provide scholarships and academic resources
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          <Row className="mt-5 text-center">
-            <Col>
-              <Link to="/services">
-                <Button variant="outline-primary" size="lg">
-                  View All Services
-                </Button>
-              </Link>
             </Col>
           </Row>
         </Container>
       </section>
 
       {/* Call to Action */}
-      <section className="cta-section py-5 bg-primary text-white">
+      <section className="cta-section py-6">
         <Container>
-          <Row className="align-items-center">
-            <Col lg={8}>
-              <h2 className="h2 fw-bold mb-3">You Can Make a Difference</h2>
-              <p className="lead mb-0">
-                Whether through donations, volunteering, or spreading awareness, 
-                your contribution can transform a child's life.
+          <Row className="text-center">
+            <Col lg={10} className="offset-lg-1">
+              <h2 className="fw-bold mb-4 text-white">Every Child Deserves Protection</h2>
+              <p className="lead text-white mb-5" style={{ fontSize: '1.25rem' }}>
+                Be part of the solution. File a complaint, donate, or spread awareness today.
               </p>
-            </Col>
-            <Col lg={4} className="text-lg-end mt-4 mt-lg-0">
-              <Link to="/get-involved">
-                <Button variant="light" size="lg" className="text-primary fw-bold px-5">
-                  Get Involved
-                </Button>
-              </Link>
+              <div className="cta-buttons">
+                <Link to="/file-complaint">
+                  <Button variant="warning" size="lg" className="px-5 py-3 fw-bold">
+                    📋 Report a Concern
+                  </Button>
+                </Link>
+                <Link to="/donate">
+                  <Button variant="light" size="lg" className="px-5 py-3 text-primary fw-bold">
+                    💝 Make a Donation
+                  </Button>
+                </Link>
+              </div>
             </Col>
           </Row>
         </Container>

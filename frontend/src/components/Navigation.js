@@ -10,8 +10,8 @@ function Navigation() {
     <Navbar bg="light" expand="lg" sticky="top" className="navbar-custom shadow-sm">
       <Container>
         <Navbar.Brand as={Link} to="/" className="brand-logo fw-bold">
-          <span className="brand-icon">🏠</span>
-          <span className="ms-2">Orphan Tracker</span>
+          <span className="brand-icon">🛡️</span>
+          <span className="ms-2">Orphan Tracker Nepal</span>
         </Navbar.Brand>
         <Navbar.Toggle 
           aria-controls="basic-navbar-nav"
@@ -23,22 +23,24 @@ function Navigation() {
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/about" onClick={() => setExpanded(false)}>
-              About Us
+              About
             </Nav.Link>
-            <Nav.Link as={Link} to="/services" onClick={() => setExpanded(false)}>
-              Services
+            <Nav.Link as={Link} to="/how-we-help" onClick={() => setExpanded(false)}>
+              How We Help
+            </Nav.Link>
+            <Nav.Link as={Link} to="/orphanages" onClick={() => setExpanded(false)}>
+              Orphanages
             </Nav.Link>
             <Nav.Link as={Link} to="/impact" onClick={() => setExpanded(false)}>
               Impact
             </Nav.Link>
-            <Nav.Link as={Link} to="/get-involved" onClick={() => setExpanded(false)}>
-              Get Involved
-            </Nav.Link>
-            <Nav.Link as={Link} to="/contact" onClick={() => setExpanded(false)}>
-              Contact
+            <Nav.Link as={Link} to="/file-complaint" onClick={() => setExpanded(false)}>
+              <Button variant="warning" size="sm" className="ms-2 px-3 fw-bold">
+                📋 File Complaint
+              </Button>
             </Nav.Link>
             <Nav.Link as={Link} to="/donate" onClick={() => setExpanded(false)}>
-              <Button variant="danger" size="sm" className="ms-2 px-3">
+              <Button variant="success" size="sm" className="ms-2 px-3 fw-bold">
                 💝 Donate
               </Button>
             </Nav.Link>

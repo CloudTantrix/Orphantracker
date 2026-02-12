@@ -1,40 +1,61 @@
+/* Global CSS Variables */
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-light: #3b82f6;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+/* Navigation Bar */
 .navbar-custom {
-  background: white !important;
-  border-bottom: 1px solid #f0f0f0;
+  background: #ffffff !important;
+  border-bottom: 2px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
 }
 
 .brand-logo {
-  font-size: 1.5rem;
-  color: #667eea !important;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--primary-color) !important;
   text-decoration: none;
   display: flex;
   align-items: center;
+  letter-spacing: -0.5px;
 }
 
 .brand-icon {
-  font-size: 1.8rem;
-  margin-right: 0.5rem;
+  font-size: 2rem;
+  margin-right: 0.75rem;
 }
 
 .navbar-custom .nav-link {
-  color: #333 !important;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  margin: 0 0.5rem;
+  color: var(--text-primary) !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  margin: 0 0.75rem;
+  padding: 0.5rem 0;
 }
 
 .navbar-custom .nav-link:hover {
-  color: #667eea !important;
+  color: var(--primary-color) !important;
 }
 
-.navbar-custom .btn-danger {
-  background: #dc3545;
-  border-color: #dc3545;
+.navbar-custom .btn-donate {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border: none;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
-.navbar-custom .btn-danger:hover {
-  background: #c82333;
-  border-color: #c82333;
-  transform: scale(1.05);
+.navbar-custom .btn-donate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
 }

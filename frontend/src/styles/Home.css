@@ -1,16 +1,19 @@
 .home-page {
   width: 100%;
+  background: #ffffff;
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
   position: relative;
-  color: white;
-  min-height: 100vh;
+  color: #ffffff;
+  min-height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
+  padding: 6rem 0;
 }
 
 .hero-overlay {
@@ -19,83 +22,223 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
+  max-width: 800px;
+  text-align: center;
 }
 
 .hero-section h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   line-height: 1.2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 .hero-section .lead {
   font-size: 1.5rem;
   opacity: 0.95;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
-/* Mission Section */
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ===== Mission Section ===== */
 .mission-section {
-  background: white;
-  border-bottom: 1px solid #f0f0f0;
+  background: #ffffff;
+  padding: 5rem 0;
 }
 
-/* Impact Stats */
+.mission-section h2 {
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.mission-section p {
+  font-size: 1.15rem;
+  color: #6b7280;
+  line-height: 2;
+  max-width: 800px;
+}
+
+/* ===== Impact Stats ===== */
 .impact-stats {
-  background: #f8f9fa;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: 5rem 0;
+}
+
+.impact-stats h2 {
+  text-align: center;
+  font-size: 2.75rem;
+  margin-bottom: 3rem;
+  color: #111827;
 }
 
 .stat-card {
-  background: white;
-  padding: 2rem 1rem;
-  border-radius: 8px;
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  text-align: center;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 .stat-card h3 {
+  font-size: 2.75rem;
+  color: #2563eb;
   margin-bottom: 0.5rem;
+  font-weight: 800;
 }
 
 .stat-card p {
+  font-size: 1.05rem;
+  color: #6b7280;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-/* Services Section */
+/* ===== Services Section ===== */
 .services-section {
-  background: white;
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 2.75rem;
+  margin-bottom: 3rem;
+  color: #111827;
 }
 
 .service-card {
-  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
   transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
+  text-align: center;
+  height: 100%;
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15) !important;
+  border-color: #2563eb;
 }
 
 .service-icon {
-  font-size: 3rem;
+  font-size: 3.5rem;
   transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 .service-card:hover .service-icon {
-  transform: scale(1.1);
+  transform: scale(1.15);
+}
+
+.service-card h5 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #111827;
+  font-weight: 700;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: #ffffff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.75rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons,
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn,
+  .cta-buttons .btn {
+    width: 100%;
+  }
 }
 
 .service-card .card-title {

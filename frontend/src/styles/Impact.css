@@ -1,32 +1,82 @@
 /* Impact Page Styles */
 .impact-page {
-  background: white;
+  background: #ffffff;
 }
 
 .impact-hero {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding: 3rem 0;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+  padding: 5rem 0;
+  color: #ffffff;
 }
 
 .impact-hero h1 {
-  color: #333;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.impact-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
 }
 
 .stat-box {
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  padding: 2.5rem 2rem;
+  text-align: center;
 }
 
 .stat-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15);
+  border-color: #2563eb;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #111827;
+  font-weight: 700;
 }
 
 .story-card {
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  padding: 2.5rem 2rem;
+}
+
+.story-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15);
+  border-color: #2563eb;
+}
+
+.story-title {
+  font-size: 1.35rem;
+  color: #111827;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.story-text {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.8;
 }
 
 .story-card:hover {

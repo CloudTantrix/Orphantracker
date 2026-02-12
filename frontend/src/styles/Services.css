@@ -1,31 +1,64 @@
 /* Services Page Styles */
 .services-page {
-  background: white;
+  background: #ffffff;
 }
 
 .services-hero {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding: 3rem 0;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+  padding: 5rem 0;
+  color: #ffffff;
 }
 
 .services-hero h1 {
-  color: #333;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.services-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
 }
 
 .service-card {
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
+  padding: 2.5rem 2rem;
+  text-align: center;
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
+  border-color: #2563eb;
 }
 
 .service-icon {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.15);
+}
+
+.service-card h5 {
+  font-size: 1.4rem;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
 }
 
 .service-details {

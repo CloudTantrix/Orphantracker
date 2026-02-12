@@ -7,13 +7,13 @@ function Donate() {
   return (
     <div className="donate-page">
       {/* Hero Section */}
-      <section className="donate-hero bg-primary text-white py-5">
+      <section className="donate-hero text-white py-6" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)' }}>
         <Container>
           <Row>
             <Col lg={12} className="text-center">
-              <h1 className="display-4 fw-bold mb-4">Make a Donation</h1>
-              <p className="lead mb-0">
-                Your generous contribution directly supports a child's journey toward hope and healing.
+              <h1 className="display-4 fw-bold mb-4">Donate to Protect Nepal's Children</h1>
+              <p className="lead mb-0" style={{ fontSize: '1.25rem' }}>
+                Your donation directly protects vulnerable children, monitors orphanages, and enables citizens to report abuse. Every rupee counts.
               </p>
             </Col>
           </Row>
@@ -21,33 +21,33 @@ function Donate() {
       </section>
 
       {/* Impact Section */}
-      <section className="py-5 bg-light">
+      <section className="py-6 bg-light">
         <Container>
           <Row className="mb-5">
             <Col lg={12} className="text-center">
-              <h2 className="h2 fw-bold mb-5">Your Impact</h2>
+              <h2 className="fw-bold mb-5 h3">Your Donation in Action</h2>
             </Col>
           </Row>
           <Row className="g-4">
             <Col md={4}>
               <Card className="shadow-sm border-0 text-center p-4">
+                <div style={{ fontSize: '2.5rem' }} className="mb-3">📋</div>
+                <h5 className="fw-bold">$30 NPR 4,000</h5>
+                <p className="text-secondary mb-0">Completes a full child welfare assessment in one orphanage</p>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="shadow-sm border-0 text-center p-4">
+                <div style={{ fontSize: '2.5rem' }} className="mb-3">🚨</div>
+                <h5 className="fw-bold">$75 NPR 10,000</h5>
+                <p className="text-secondary mb-0">Funds investigation and protective response for one complaint</p>
+              </Card>
+            </Col>
+            <Col md={4}>
+              <Card className="shadow-sm border-0 text-center p-4">
                 <div style={{ fontSize: '2.5rem' }} className="mb-3">📚</div>
-                <h5 className="fw-bold">$25</h5>
-                <p className="text-muted mb-0">Provides educational materials for one child</p>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="shadow-sm border-0 text-center p-4">
-                <div style={{ fontSize: '2.5rem' }} className="mb-3">🏥</div>
-                <h5 className="fw-bold">$50</h5>
-                <p className="text-muted mb-0">Covers medical check-up and care</p>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="shadow-sm border-0 text-center p-4">
-                <div style={{ fontSize: '2.5rem' }} className="mb-3">🏠</div>
-                <h5 className="fw-bold">$100</h5>
-                <p className="text-muted mb-0">One week of safe shelter and meals</p>
+                <h5 className="fw-bold">$150 NPR 20,000</h5>
+                <p className="text-secondary mb-0">One year of education support for a child aging out of care</p>
               </Card>
             </Col>
           </Row>

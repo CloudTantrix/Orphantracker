@@ -1,31 +1,92 @@
 /* Get Involved Page Styles */
 .get-involved-page {
-  background: white;
+  background: #ffffff;
 }
 
-.involved-hero {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding: 3rem 0;
+.get-involved-hero {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+  padding: 5rem 0;
+  color: #ffffff;
 }
 
-.involved-hero h1 {
-  color: #333;
+.get-involved-hero h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.get-involved-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
 }
 
 .involvement-card {
-  border-radius: 8px;
-  background: white;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  padding: 2.5rem 2rem;
+  text-align: center;
 }
 
 .involvement-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
+  border-color: #2563eb;
 }
 
 .involvement-card .card-title {
-  color: #333;
-  font-size: 1.1rem;
+  color: #111827;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.involvement-card .card-text {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.involvement-card .btn {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+/* Volunteer Form Card */
+.volunteer-form-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.volunteer-form-card .card-body {
+  padding: 3rem 2.5rem;
+}
+
+.volunteer-form-card h2 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+/* Stories Section */
+.stories-section h2 {
+  font-size: 2.75rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .get-involved-hero h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .involvement-card ul {
