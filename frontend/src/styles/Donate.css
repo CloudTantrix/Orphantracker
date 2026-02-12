@@ -3,6 +3,19 @@
   background: #ffffff;
 }
 
+/* Section Spacing */
+.donate-page section {
+  padding: 4rem 0;
+}
+
+.donate-page section.py-6 {
+  padding: 6rem 0 !important;
+}
+
+.donate-page section.bg-light {
+  background-color: #f9fafb;
+}
+
 /* Hero Section */
 .donate-hero {
   background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);

@@ -7,3 +7,25 @@
 .App main {
   flex: 1;
 }
+
+/* Global Spacing Utilities */
+.py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.bg-light {
+  background-color: #f9fafb !important;
+}
+
+/* Ensure Container has proper max-width */
+.container-lg,
+.container,
+.container-xl,
+.container-xxl {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
