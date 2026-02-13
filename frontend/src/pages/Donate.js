@@ -8,7 +8,7 @@ function Donate() {
   return (
     <div className="donate-page">
       {/* Hero Section */}
-      <section className="donate-hero text-white py-6" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)' }}>
+      <section className="donate-hero text-white py-6" style={{ background: 'linear-gradient(135deg, #B31217 0%, #FF8C00 100%)' }}>
         <Container>
           <Row>
             <Col lg={12} className="text-center">

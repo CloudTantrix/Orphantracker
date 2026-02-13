@@ -180,7 +180,7 @@ function Home() {
               <Card className="shadow-lg border-0 glass">
                 <Card.Body className="p-5 bg-light-blue">
                   <h4 className="fw-bold mb-3">Our Motto</h4>
-                  <p style={{ fontSize: '1.2rem', fontStyle: 'italic', color: '#2563eb', fontWeight: '600' }}>
+                  <p style={{ fontSize: '1.2rem', fontStyle: 'italic', color: '#B31217', fontWeight: '600' }}>
                     "Protecting Children's Welfare • Creating Safe Environments • Building Conscious Citizens"
                   </p>
                 </Card.Body>

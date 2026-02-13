@@ -15,7 +15,7 @@ function Impact() {
   return (
     <div className="impact-page">
       {/* Hero Section */}
-      <section className="impact-hero text-white py-6" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)' }}>
+      <section className="impact-hero text-white py-6" style={{ background: 'linear-gradient(135deg, #B31217 0%, #FF8C00 100%)' }}>
         <Container>
           <Row>
             <Col lg={12} className="text-center">
@@ -203,7 +203,7 @@ function Impact() {
                       <div style={{ 
                         width: '40px', 
                         height: '40px', 
-                        backgroundColor: '#2563eb', 
+                        backgroundColor: '#B31217', 
                         borderRadius: '8px',
                         display: 'flex',
                         alignItems: 'center',

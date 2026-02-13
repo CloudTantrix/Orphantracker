@@ -21,7 +21,7 @@
 
 /* Hero Section */
 .donate-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B31217 0%, #FF8C00 100%);
   padding: 8rem 2rem;
   min-height: 280px;
   display: flex;
@@ -95,8 +95,8 @@
 
 .form-control:focus, 
 .form-select:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: #B31217;
+  box-shadow: 0 0 0 3px rgba(179, 18, 23, 0.1);
   background: #ffffff;
 }
 
@@ -117,8 +117,8 @@
 }
 
 .form-check-input:checked {
-  background-color: #2563eb;
-  border-color: #2563eb;
+  background-color: #B31217;
+  border-color: #B31217;
 }
 
 .form-check-label {
@@ -167,9 +167,9 @@
 }
 
 .btn-outline-secondary:hover {
-  border-color: #2563eb;
-  color: #2563eb;
-  background: rgba(37, 99, 235, 0.05);
+  border-color: #B31217;
+  color: #B31217;
+  background: rgba(179, 18, 23, 0.05);
 }
 
 /* FAQ Styles */

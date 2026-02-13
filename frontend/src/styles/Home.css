@@ -194,7 +194,7 @@
 
 .stat-card h3 {
   font-size: 3rem;
-  color: #2563eb;
+  color: #B31217;
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
@@ -266,7 +266,7 @@
 
 /* ===== Hero Section ===== */
 .hero-section {
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #B31217 0%, #FF8C00 50%, #F5C542 100%);
   position: relative;
   color: #ffffff;
   min-height: 90vh;

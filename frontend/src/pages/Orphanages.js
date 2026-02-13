@@ -129,7 +129,7 @@ function Orphanages() {
 
   const getRatingColor = (rating) => {
     if (rating >= 4.5) return '#10b981';
-    if (rating >= 4.0) return '#3b82f6';
+    if (rating >= 4.0) return '#B31217';
     if (rating >= 3.5) return '#f59e0b';
     return '#ef4444';
   };
@@ -328,7 +328,7 @@ function Orphanages() {
                       <div style={{ 
                         width: '50px', 
                         height: '50px', 
-                        backgroundColor: '#3b82f6', 
+                        backgroundColor: '#B31217', 
                         borderRadius: '8px',
                         display: 'flex',
                         alignItems: 'center',
