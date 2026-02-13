@@ -167,7 +167,7 @@ function Home() {
                 Many orphanages operate without accountability, and vulnerable children have no voice.
               </p>
               <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-                Orphan Tracker Nepal changes this by:
+                Ujyalo Bhavishya Abhiyan changes this by:
               </p>
               <ul className="text-secondary" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
                 <li>📋 Creating transparent systems to track child welfare</li>

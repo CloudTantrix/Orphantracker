@@ -10,7 +10,7 @@ function Navigation() {
     <Navbar bg="light" expand="lg" sticky="top" className="navbar-custom shadow-sm">
       <Container>
         <Navbar.Brand as={Link} to="/" className="brand-logo fw-bold">
-          <img src="/logos/ujyalo-logo-icon.svg" alt="Ujyalo Bhavishya Abhiyan" height="40" className="me-2" />
+          <img src="/logos/ujyalo-logo.png" alt="Ujyalo Bhavishya Abhiyan" height="40" className="me-2" onError={(e) => {e.target.src = '/logos/ujyalo-logo-icon.svg'}} />
           <span className="ms-2">Ujyalo Bhavishya Abhiyan</span>
         </Navbar.Brand>
         <Navbar.Toggle 

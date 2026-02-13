@@ -28,7 +28,7 @@ function About() {
             <Col lg={8} className="offset-lg-2">
               <h2 className="fw-bold mb-4 h3">Who We Are</h2>
               <p className="lead mb-3 text-secondary">
-                Orphan Tracker Nepal is a nonprofit organization dedicated to protecting vulnerable children across Nepal. We track and monitor orphans and abandoned children until they reach age 18 or achieve self-reliance, ensuring their safety, wellbeing, and dignity.
+                Ujyalo Bhavishya Abhiyan is a nonprofit organization dedicated to protecting vulnerable children across Nepal. We track and monitor children at risk until they reach age 18 or achieve self-reliance, ensuring their safety, wellbeing, and dignity.
               </p>
               <p className="lead mb-3 text-secondary">
                 In a country where thousands of children live in orphanages with varying levels of care, we provide critical oversight and accountability. We maintain transparent records of children's status, conduct regular facility assessments, investigate complaints, and empower communities to build awareness about child protection.
