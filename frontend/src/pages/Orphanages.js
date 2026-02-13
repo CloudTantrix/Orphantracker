@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Button, Card, Form, InputGroup, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Card, Form, InputGroup, Badge } from 'react-bootstrap';
+import Button from '../components/ui/Button';
 import '../styles/Donate.css';
 
 function Orphanages() {
@@ -156,7 +157,7 @@ function Orphanages() {
         <Container>
           <Row className="g-4 mb-5">
             <Col md={4}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body className="py-5">
                   <h3 className="fw-bold text-primary" style={{ fontSize: '2.5rem' }}>145</h3>
                   <p className="text-secondary">Orphanages Monitored</p>
@@ -208,10 +209,8 @@ function Orphanages() {
                   {locations.map(location => (
                     <Button
                       key={location}
-                      variant={selectedLocation === location ? "primary" : "outline-primary"}
-                      size="sm"
+                      className={`${selectedLocation === location ? 'btn-primary' : 'btn-outline-primary'} text-capitalize btn-sm` }
                       onClick={() => setSelectedLocation(location)}
-                      className="text-capitalize"
                     >
                       {location === 'all' ? 'All Districts' : location}
                     </Button>
@@ -226,7 +225,7 @@ function Orphanages() {
             {filteredOrphanages.length > 0 ? (
               filteredOrphanages.map(org => (
                 <Col lg={6} key={org.id}>
-                  <Card className="border-0 shadow-sm h-100 orphanage-card" style={{ borderLeft: `5px solid ${getRatingColor(org.rating)}` }}>
+                  <Card className="border-0 shadow-sm h-100 orphanage-card glass" style={{ borderLeft: `5px solid ${getRatingColor(org.rating)}` }}>
                     <Card.Body>
                       <div className="d-flex justify-content-between align-items-start mb-3">
                         <div>
@@ -269,10 +268,10 @@ function Orphanages() {
                       </div>
 
                       <div className="d-grid gap-2">
-                        <Button variant="outline-primary" size="sm" className="fw-bold">
+                        <Button className="btn-outline-primary btn-sm fw-bold">
                           View Full Report
                         </Button>
-                        <Button variant="outline-warning" size="sm" className="fw-bold">
+                        <Button className="btn-outline-warning btn-sm fw-bold">
                           File a Complaint
                         </Button>
                       </div>

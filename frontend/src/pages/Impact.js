@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Button from '../components/ui/Button';
 import '../styles/Impact.css';
 
 function Impact() {
@@ -33,15 +34,15 @@ function Impact() {
           <Row className="g-4 mb-5">
             {impactStats.map((stat, index) => (
               <Col md={6} lg={3} key={index}>
-                <Card className="border-0 shadow-sm text-center">
-                  <Card.Body className="py-5">
-                    <h3 className="fw-bold text-primary mb-3" style={{ fontSize: '2.5rem' }}>
-                      {stat.value}{stat.unit}
-                    </h3>
-                    <p className="text-secondary mb-0">{stat.label}</p>
-                  </Card.Body>
-                </Card>
-              </Col>
+                  <Card className="border-0 shadow-sm text-center glass">
+                    <Card.Body className="py-5">
+                      <h3 className="fw-bold text-primary mb-3" style={{ fontSize: '2.5rem' }}>
+                        {stat.value}{stat.unit}
+                      </h3>
+                      <p className="text-secondary mb-0">{stat.label}</p>
+                    </Card.Body>
+                  </Card>
+                </Col>
             ))}
           </Row>
         </Container>
@@ -57,7 +58,7 @@ function Impact() {
           </Row>
           <Row className="g-4">
             <Col md={6} lg={4}>
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow-sm glass">
                 <Card.Body className="p-4">
                   <h5 style={{ fontSize: '2.5rem' }} className="mb-3">📊</h5>
                   <h6 className="fw-bold mb-3">Track & Monitor</h6>
@@ -68,7 +69,7 @@ function Impact() {
               </Card>
             </Col>
             <Col md={6} lg={4}>
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow-sm glass">
                 <Card.Body className="p-4">
                   <h5 style={{ fontSize: '2.5rem' }} className="mb-3">🛡️</h5>
                   <h6 className="fw-bold mb-3">Assess Facilities</h6>
@@ -79,7 +80,7 @@ function Impact() {
               </Card>
             </Col>
             <Col md={6} lg={4}>
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow-sm glass">
                 <Card.Body className="p-4">
                   <h5 style={{ fontSize: '2.5rem' }} className="mb-3">📞</h5>
                   <h6 className="fw-bold mb-3">Investigate Complaints</h6>
@@ -181,7 +182,7 @@ function Impact() {
               <p className="text-secondary mb-4" style={{ fontSize: '1.1rem' }}>
                 We believe in complete transparency about our work. Every investigation, every assessment, every dollar spent is documented and available for public review.
               </p>
-              <Button variant="outline-primary" size="lg" className="fw-bold">
+              <Button className="btn-outline-primary" size="lg">
                 📄 Download 2025 Annual Report
               </Button>
             </Col>

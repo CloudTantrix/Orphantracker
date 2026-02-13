@@ -16,12 +16,17 @@
   },
   "devDependencies": {
     "eslint": "^8.54.0",
-    "prettier": "^3.1.0"
+    "prettier": "^3.1.0",
+    "@storybook/react": "^7.0.0",
+    "@storybook/addon-essentials": "^7.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "storybook": "start-storybook -p 6006 -s public",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "format": "prettier --write src/**/*.{js,jsx}"

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
+import { Container, Row, Col, Form, Card } from 'react-bootstrap';
+import Button from '../components/ui/Button';
 import '../styles/Donate.css';
 
 function FileComplaint() {
@@ -115,7 +116,7 @@ function FileComplaint() {
             <Col lg={10} className="offset-lg-1">
               <h2 className="fw-bold text-center mb-5">Report a Child Welfare Concern</h2>
               
-              <Card className="donation-form-card">
+                  <Card className="donation-form-card glass">
                 <Card.Body className="p-5">
                   <Form onSubmit={handleSubmit}>
                     {/* About the Child */}
@@ -270,10 +271,10 @@ function FileComplaint() {
                     {/* Submit */}
                     <div className="text-center">
                       <Button 
-                        variant="primary" 
-                        size="lg" 
                         type="submit"
                         className="px-5 py-3 fw-bold"
+                        variant="primary"
+                        size="lg"
                       >
                         Submit Complaint
                       </Button>

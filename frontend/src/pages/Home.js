@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import Button from '../components/ui/Button';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
@@ -21,12 +22,12 @@ function Home() {
               </p>
               <div className="hero-buttons">
                 <Link to="/file-complaint">
-                  <Button variant="warning" size="lg" className="px-5 py-3 fw-bold">
+                  <Button className="px-5 py-3 fw-bold btn-primary" size="lg">
                     📋 Report a Case
                   </Button>
                 </Link>
                 <Link to="/donate">
-                  <Button variant="light" size="lg" className="px-5 py-3 text-dark fw-bold">
+                  <Button className="px-5 py-3 text-dark fw-bold btn-outline" size="lg">
                     💝 Support Us
                   </Button>
                 </Link>
@@ -49,7 +50,7 @@ function Home() {
           </Row>
           <Row className="g-4">
             <Col md={6} lg={4}>
-              <Card className="service-card h-100">
+              <Card className="service-card h-100 glass">
                 <Card.Body className="text-center">
                   <div className="service-icon mb-3">📍</div>
                   <Card.Title className="fw-bold mb-3">Track & Monitor</Card.Title>
@@ -60,7 +61,7 @@ function Home() {
               </Card>
             </Col>
             <Col md={6} lg={4}>
-              <Card className="service-card h-100">
+              <Card className="service-card h-100 glass">
                 <Card.Body className="text-center">
                   <div className="service-icon mb-3">⚖️</div>
                   <Card.Title className="fw-bold mb-3">File & Investigate Complaints</Card.Title>
@@ -71,7 +72,7 @@ function Home() {
               </Card>
             </Col>
             <Col md={6} lg={4}>
-              <Card className="service-card h-100">
+              <Card className="service-card h-100 glass">
                 <Card.Body className="text-center">
                   <div className="service-icon mb-3">🤝</div>
                   <Card.Title className="fw-bold mb-3">Provide Support</Card.Title>
@@ -82,7 +83,7 @@ function Home() {
               </Card>
             </Col>
             <Col md={6} lg={4}>
-              <Card className="service-card h-100">
+              <Card className="service-card h-100 glass">
                 <Card.Body className="text-center">
                   <div className="service-icon mb-3">🏛️</div>
                   <Card.Title className="fw-bold mb-3">Monitor Orphanages</Card.Title>
@@ -93,7 +94,7 @@ function Home() {
               </Card>
             </Col>
             <Col md={6} lg={4}>
-              <Card className="service-card h-100">
+              <Card className="service-card h-100 glass">
                 <Card.Body className="text-center">
                   <div className="service-icon mb-3">🧠</div>
                   <Card.Title className="fw-bold mb-3">Build Awareness</Card.Title>
@@ -104,7 +105,7 @@ function Home() {
               </Card>
             </Col>
             <Col md={6} lg={4}>
-              <Card className="service-card h-100">
+              <Card className="service-card h-100 glass">
                 <Card.Body className="text-center">
                   <div className="service-icon mb-3">❤️</div>
                   <Card.Title className="fw-bold mb-3">Sustain Through Donations</Card.Title>
@@ -128,25 +129,25 @@ function Home() {
           </Row>
           <Row className="g-4">
             <Col md={6} lg={3}>
-              <div className="stat-card">
+              <div className="stat-card glass">
                 <h3 className="stat-number">2,500+</h3>
                 <p className="stat-label">Children Tracked & Supported</p>
               </div>
             </Col>
             <Col md={6} lg={3}>
-              <div className="stat-card">
+              <div className="stat-card glass">
                 <h3 className="stat-number">145</h3>
                 <p className="stat-label">Orphanages Monitored</p>
               </div>
             </Col>
             <Col md={6} lg={3}>
-              <div className="stat-card">
+              <div className="stat-card glass">
                 <h3 className="stat-number">500+</h3>
                 <p className="stat-label">Complaints Investigated</p>
               </div>
             </Col>
             <Col md={6} lg={3}>
-              <div className="stat-card">
+              <div className="stat-card glass">
                 <h3 className="stat-number">98%</h3>
                 <p className="stat-label">Safety Assessment Rate</p>
               </div>
@@ -176,7 +177,7 @@ function Home() {
               </ul>
             </Col>
             <Col lg={6}>
-              <Card className="shadow-lg border-0">
+              <Card className="shadow-lg border-0 glass">
                 <Card.Body className="p-5 bg-light-blue">
                   <h4 className="fw-bold mb-3">Our Motto</h4>
                   <p style={{ fontSize: '1.2rem', fontStyle: 'italic', color: '#2563eb', fontWeight: '600' }}>

@@ -15,3 +15,11 @@ code {
 html, body, #root {
   height: 100%;
 }
+
+/* import design tokens */
+@import './design-tokens.css';
+
+/* small helpers to keep spacing consistent */
+.py-6 { padding-top: 6rem; padding-bottom: 6rem; }
+.lead { font-size: var(--lead-size); color: var(--muted); }
+

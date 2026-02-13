@@ -1,6 +1,7 @@
 /* About Page Styles */
 .about-page {
-  background: #ffffff;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
 }
 
 /* Section Spacing */
@@ -13,11 +14,13 @@
 }
 
 .about-page section.bg-light {
-  background-color: #f9fafb;
+  background: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
 }
 
 .about-hero {
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 8rem 2rem;
   color: #ffffff;
   min-height: 280px;
@@ -46,24 +49,32 @@
 
 .value-card {
   padding: 2.5rem 2rem;
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .value-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
-  border-color: #2563eb;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 48px rgba(31, 38, 135, 0.15);
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(37, 99, 235, 0.3);
 }
 
 .value-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
   display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.value-card:hover .value-icon {
+  transform: scale(1.15) rotate(10deg);
 }
 
 .value-card h5 {
@@ -76,22 +87,49 @@
 .value-card p {
   font-size: 0.95rem;
   color: #6b7280;
+  line-height: 1.7;
 }
 
 .team-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 48px rgba(31, 38, 135, 0.15);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .team-avatar {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-card:hover .team-avatar {
+  transform: scale(1.1);
+}
+
+.team-card h5 {
+  color: #111827;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.team-card p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 @media (max-width: 768px) {

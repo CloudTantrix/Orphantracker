@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Button, Form, Card } from 'react-bootstrap';
+import { Container, Row, Col, Form, Card } from 'react-bootstrap';
+import Button from '../components/ui/Button';
 import '../styles/Donate.css';
 
 function Donate() {
@@ -30,7 +31,7 @@ function Donate() {
           </Row>
           <Row className="g-4">
             <Col md={4}>
-              <Card className="shadow-sm border-0 text-center p-4">
+              <Card className="shadow-sm border-0 text-center p-4 glass">
                 <div style={{ fontSize: '2.5rem' }} className="mb-3">📋</div>
                 <h5 className="fw-bold">$30 NPR 4,000</h5>
                 <p className="text-secondary mb-0">Completes a full child welfare assessment in one orphanage</p>
@@ -59,7 +60,7 @@ function Donate() {
         <Container>
           <Row className="mb-5">
             <Col lg={8} className="offset-lg-2">
-              <Card className="shadow-lg border-0">
+              <Card className="shadow-lg border-0 glass donation-form-card">
                 <Card.Body className="p-5">
                   <h3 className="fw-bold mb-4">Make Your Donation</h3>
                   
@@ -97,8 +98,7 @@ function Donate() {
                       {[25, 50, 100, 250, 500, 1000].map((amount) => (
                         <Col xs={6} sm={4} lg={2} key={amount}>
                           <Button 
-                            variant="outline-secondary" 
-                            className="w-100"
+                            className="w-100 btn-outline-secondary"
                           >
                             ${amount}
                           </Button>
@@ -198,9 +198,9 @@ function Donate() {
 
                   {/* Submit Button */}
                   <Button 
-                    variant="primary" 
-                    size="lg" 
                     className="w-100 fw-bold py-3"
+                    variant="primary"
+                    size="lg"
                   >
                     Proceed to Payment →
                   </Button>

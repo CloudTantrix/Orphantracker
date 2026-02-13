@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Button from '../components/ui/Button';
 import '../styles/About.css';
 
 function About() {
@@ -99,7 +100,7 @@ function About() {
           </Row>
           <Row className="g-4">
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body>
                   <div style={{ fontSize: '2.5rem' }} className="mb-3">🛡️</div>
                   <h5 className="fw-bold mb-3">Child Protection</h5>
@@ -110,7 +111,7 @@ function About() {
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body>
                   <div style={{ fontSize: '2.5rem' }} className="mb-3">📊</div>
                   <h5 className="fw-bold mb-3">Transparency</h5>
@@ -121,7 +122,7 @@ function About() {
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body>
                   <div style={{ fontSize: '2.5rem' }} className="mb-3">🤝</div>
                   <h5 className="fw-bold mb-3">Community Action</h5>
@@ -132,7 +133,7 @@ function About() {
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body>
                   <div style={{ fontSize: '2.5rem' }} className="mb-3">💡</div>
                   <h5 className="fw-bold mb-3">Systemic Change</h5>
@@ -157,9 +158,9 @@ function About() {
               </p>
             </Col>
           </Row>
-          <Row className="g-4">
+              <Row className="g-4">
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body>
                   <div style={{ fontSize: '3rem' }} className="mb-3">👩‍💼</div>
                   <h6 className="fw-bold">Prabisha Sharma</h6>
@@ -171,7 +172,7 @@ function About() {
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body>
                   <div style={{ fontSize: '3rem' }} className="mb-3">👨‍💼</div>
                   <h6 className="fw-bold">Ram Bahadur Singh</h6>
@@ -183,7 +184,7 @@ function About() {
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body>
                   <div style={{ fontSize: '3rem' }} className="mb-3">👩‍⚕️</div>
                   <h6 className="fw-bold">Dr. Anita Khatri</h6>
@@ -195,7 +196,7 @@ function About() {
               </Card>
             </Col>
             <Col md={6} lg={3}>
-              <Card className="border-0 shadow-sm text-center">
+              <Card className="border-0 shadow-sm text-center glass">
                 <Card.Body>
                   <div style={{ fontSize: '3rem' }} className="mb-3">👨‍🎓</div>
                   <h6 className="fw-bold">Ashish Gupta</h6>

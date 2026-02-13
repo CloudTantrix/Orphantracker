@@ -1,6 +1,7 @@
 /* Impact Page Styles */
 .impact-page {
-  background: #ffffff;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
 }
 
 /* Section Spacing */
@@ -13,11 +14,13 @@
 }
 
 .impact-page section.bg-light {
-  background-color: #f9fafb;
+  background: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
 }
 
 .impact-hero {
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 8rem 2rem;
   color: #ffffff;
   min-height: 280px;

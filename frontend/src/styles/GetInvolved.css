@@ -1,12 +1,14 @@
 /* Get Involved Page Styles */
 .get-involved-page {
-  background: #ffffff;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
 }
 
 .get-involved-hero {
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 5rem 0;
   color: #ffffff;
+  animation: slideInDown 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .get-involved-hero h1 {
@@ -23,23 +25,26 @@
 }
 
 .involvement-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 2.5rem 2rem;
   text-align: center;
 }
 
 .involvement-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
-  border-color: #2563eb;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 48px rgba(31, 38, 135, 0.15);
+  border-color: rgba(102, 126, 234, 0.3);
 }
 
 .involvement-card .card-title {
-  color: #111827;
+  color: #1f2937;
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -54,14 +59,31 @@
 .involvement-card .btn {
   margin-top: 1rem;
   font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.involvement-card .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
 }
 
 /* Volunteer Form Card */
 .volunteer-form-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.volunteer-form-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 48px rgba(31, 38, 135, 0.15);
 }
 
 .volunteer-form-card .card-body {
@@ -70,7 +92,7 @@
 
 .volunteer-form-card h2 {
   font-size: 2rem;
-  color: #111827;
+  color: #1f2937;
   margin-bottom: 2rem;
   font-weight: 800;
 }
@@ -80,6 +102,7 @@
   font-size: 2.75rem;
   margin-bottom: 3rem;
   text-align: center;
+  color: #1f2937;
 }
 
 /* Responsive */
@@ -97,6 +120,7 @@
 .involvement-card li {
   list-style: none;
   padding: 0.25rem 0;
+  color: #6b7280;
 }
 
 @media (max-width: 768px) {
