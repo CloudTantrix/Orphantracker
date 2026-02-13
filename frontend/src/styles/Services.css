@@ -48,7 +48,7 @@
   margin-bottom: 1rem;
   display: inline-block;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  color: #667eea;
+  color: #B31217;
 }
 
 .service-card:hover .service-icon {
@@ -81,7 +81,7 @@
 .step-circle {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B31217 0%, #FF8C00 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -90,13 +90,13 @@
   font-weight: bold;
   color: white;
   margin: 0 auto;
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 8px 20px rgba(179, 18, 23, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .step-circle:hover {
   transform: scale(1.1);
-  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 12px 30px rgba(179, 18, 23, 0.4);
 }
 
 @media (max-width: 768px) {

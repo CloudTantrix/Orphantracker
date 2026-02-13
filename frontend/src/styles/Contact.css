@@ -1,11 +1,11 @@
 /* Contact Page Styles */
 .contact-page {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f0f0 100%);
   min-height: 100vh;
 }
 
 .contact-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B31217 0%, #FF8C00 100%);
   padding: 5rem 0;
   color: #ffffff;
   animation: slideInDown 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,7 +47,7 @@
   font-size: 3rem;
   margin-bottom: 1rem;
   display: inline-block;
-  color: #667eea;
+  color: #B31217;
 }
 
 .contact-card h5 {
@@ -64,14 +64,14 @@
 }
 
 .contact-card a {
-  color: #667eea;
+  color: #B31217;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-card a:hover {
-  color: #764ba2;
+  color: #FF8C00;
 }
 
 .contact-form-card {

@@ -1,12 +1,12 @@
 /* Orphans page styles */
 .orphans-page {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f0f0 100%);
   padding: 3rem 0;
   min-height: 100vh;
 }
 
 .orphans-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B31217 0%, #FF8C00 100%);
   color: #ffffff;
   padding: 3rem 0;
   margin-bottom: 2rem;
