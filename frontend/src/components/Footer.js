@@ -12,13 +12,13 @@ function Footer() {
   return (
     <footer className="footer bg-dark text-white mt-5">
       {/* Newsletter Section */}
-      <section className="newsletter-section bg-primary text-white py-5">
+      <section className="newsletter-section text-white py-5" style={{ background: 'linear-gradient(135deg, #B31217 0%, #FF8C00 100%)' }}>
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="mb-4 mb-lg-0">
               <h4 className="h5 fw-bold mb-2">Subscribe to Our Newsletter</h4>
               <p className="text-white-50 mb-0">
-                Get updates on our latest impact and how you can help
+                Get updates on our latest impact and how you can help protect Nepal's vulnerable children
               </p>
             </Col>
             <Col lg={6}>
@@ -29,7 +29,7 @@ function Footer() {
                   className="flex-grow-1"
                   required
                 />
-                <Button variant="light" type="submit" className="text-primary fw-bold">
+                <Button variant="light" type="submit" className="fw-bold" style={{ color: '#B31217' }}>
                   Subscribe
                 </Button>
               </Form>
@@ -44,10 +44,9 @@ function Footer() {
           <Row className="g-4 mb-5">
             {/* About Section */}
             <Col md={6} lg={3}>
-              <h5 className="fw-bold mb-4">Orphan Tracker</h5>
+              <h5 className="fw-bold mb-4">Ujyalo Bhavishya Abhiyan</h5>
               <p className="text-white-50 small mb-4">
-                Breaking the cycle of abandonment, one child at a time through comprehensive 
-                support and care.
+                Protecting Nepal's vulnerable children through monitoring, transparency, and community action.
               </p>
               <div className="social-links">
                 <a href="#facebook" className="text-white-50 me-3 text-decoration-none">

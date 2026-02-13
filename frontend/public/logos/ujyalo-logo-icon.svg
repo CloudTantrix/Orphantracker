@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Square background for favicon -->
+  <rect width="256" height="256" fill="white"/>
+  
+  <!-- Mandala Icon Mark (centered) -->
+  <g transform="translate(128, 128)">
+    <!-- Outer glow circle -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#F5C542" stroke-width="1.5" opacity="0.3"/>
+    
+    <!-- Main mandala outer petals -->
+    <g id="petal-group">
+      <path d="M -7,-35 Q -22,-57 -7,-78 Q 7,-57 -7,-35 Z" fill="#B31217" stroke="#F5C542" stroke-width="1"/>
+      <path d="M -7,-35 Q -22,-57 -7,-78 Q 7,-57 -7,-35 Z" fill="#B31217" stroke="#F5C542" stroke-width="1" transform="rotate(72)"/>
+      <path d="M -7,-35 Q -22,-57 -7,-78 Q 7,-57 -7,-35 Z" fill="#B31217" stroke="#F5C542" stroke-width="1" transform="rotate(144)"/>
+      <path d="M -7,-35 Q -22,-57 -7,-78 Q 7,-57 -7,-35 Z" fill="#B31217" stroke="#F5C542" stroke-width="1" transform="rotate(216)"/>
+      <path d="M -7,-35 Q -22,-57 -7,-78 Q 7,-57 -7,-35 Z" fill="#B31217" stroke="#F5C542" stroke-width="1" transform="rotate(288)"/>
+    </g>
+    
+    <!-- Inner mandala circle -->
+    <circle cx="0" cy="0" r="65" fill="#FF8C00" stroke="#F5C542" stroke-width="1.5"/>
+    
+    <!-- Golden border -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#F5C542" stroke-width="2" stroke-dasharray="4,2"/>
+    <circle cx="0" cy="0" r="61" fill="none" stroke="#F5C542" stroke-width="0.8"/>
+    
+    <!-- Diamond pattern background -->
+    <g opacity="0.4">
+      <polygon points="0,-45 18,-32 0,-18 -18,-32" fill="#B31217"/>
+      <polygon points="28,-12 46,2 28,16 10,2" fill="#B31217"/>
+      <polygon points="-28,-12 -10,2 -28,16 -46,2" fill="#B31217"/>
+      <polygon points="18,32 36,45 18,58 0,45" fill="#B31217"/>
+      <polygon points="-18,32 0,45 -18,58 -36,45" fill="#B31217"/>
+    </g>
+    
+    <!-- Central child silhouette -->
+    <g transform="translate(0, 3)">
+      <!-- Head -->
+      <circle cx="0" cy="-12" r="10" fill="#0B0B0B"/>
+      <!-- Body -->
+      <ellipse cx="0" cy="6" rx="8" ry="15" fill="#0B0B0B"/>
+      <!-- Arms in meditation pose -->
+      <path d="M -6,4 Q -16,-1 -13,10" stroke="#0B0B0B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M 6,4 Q 16,-1 13,10" stroke="#0B0B0B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- Lotus base -->
+      <ellipse cx="0" cy="25" rx="12" ry="6" fill="#FF8C00"/>
+      <ellipse cx="-7" cy="27" rx="4" ry="5" fill="#B31217"/>
+      <ellipse cx="7" cy="27" rx="4" ry="5" fill="#B31217"/>
+    </g>
+  </g>
+</svg>

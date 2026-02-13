@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <!-- Shield -->
+  <path d="M 100 30 L 155 55 L 155 110 C 155 150 100 170 100 170 C 100 170 45 150 45 110 L 45 55 Z" fill="#1a1a1a"/>
+  
+  <!-- Heart -->
+  <path d="M 100 80 C 90 70 75 75 75 85 C 75 95 85 105 100 115 C 115 105 125 95 125 85 C 125 75 110 70 100 80 Z" fill="#ffffff"/>
+  
+  <!-- Text -->
+  <text x="100" y="210" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="600" fill="#1a1a1a" text-anchor="middle">
+    OrphanTracker
+  </text>
+</svg>

@@ -8,22 +8,22 @@ function Home() {
   return (
     <div className="home-page">
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section" style={{ background: 'linear-gradient(135deg, #B31217 0%, #FF8C00 100%)' }}>
         <div className="hero-overlay"></div>
         <Container>
           <Row className="align-items-center" style={{ minHeight: '80vh' }}>
             <Col lg={10} className="hero-content">
               <h1 className="display-3 fw-bold mb-4 text-white">
-                Protecting Children's Future Across Nepal
+                Safe Children. Bright Futures.
               </h1>
               <p className="lead text-white mb-5" style={{ fontSize: '1.4rem', lineHeight: '1.8' }}>
-                We monitor, track, and support orphaned children across Nepal until they become self-reliant citizens. 
-                Together, we create a safe environment where every child can thrive.
+                Ujyalo Bhavishya Abhiyan protects Nepal's vulnerable children through institutional monitoring, 
+                community reporting, and direct action. Every child deserves safety and opportunity to thrive.
               </p>
               <div className="hero-buttons">
                 <Link to="/file-complaint">
                   <Button className="px-5 py-3 fw-bold btn-primary" size="lg">
-                    📋 Report a Case
+                    📋 Report a Concern
                   </Button>
                 </Link>
                 <Link to="/donate">

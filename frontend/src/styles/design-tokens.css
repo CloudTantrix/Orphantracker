@@ -1,18 +1,31 @@
-/* Design tokens for OrphanTracker (glassmorphic theme)
+/* Design tokens for Ujyalo Bhavishya Abhiyan (Nepal child protection)
    Import this file at the top-level CSS (index.css or App.css)
+   Color scheme: Deep Red, Gold, Saffron - Nepal-inspired heritage
 */
 :root {
-  /* Colors */
-  --bg-gradient-1: #f5f7fa;
-  --bg-gradient-2: #c3cfe2;
-  --primary-1: #667eea; /* purple */
-  --primary-2: #764ba2; /* deep purple */
-  --accent-1: #10b981; /* green */
-  --accent-2: #f59e0b; /* amber */
+  /* Primary Colors (Nepal-inspired) */
+  --primary-deep-red: #B31217;      /* Heritage, safety, protection */
+  --primary-gold: #F5C542;           /* Prosperity, enlightenment */
+  --primary-saffron: #FF8C00;        /* Wellness, courage */
+  --primary-dark: #0B0B0B;           /* Depth, dark backgrounds */
+  
+  /* Legacy compatibility (remapped) */
+  --primary-1: #B31217;              /* deep red */
+  --primary-2: #FF8C00;              /* saffron */
+  --accent-1: #10b981;               /* green (for success states) */
+  --accent-2: #F5C542;               /* gold (secondary highlight) */
+  
+  /* Background gradients (updated for Nepal theme) */
+  --bg-gradient-1: #FFFFFF;
+  --bg-gradient-2: #F9F5F0;
+  
+  /* Glass effect */
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: rgba(255, 255, 255, 0.25);
-  --muted: #6b7280;
-  --text: #1f2937;
+  
+  /* Text colors */
+  --muted: #666666;
+  --text: #0B0B0B;
 
   /* Spacing scale */
   --space-xs: 0.25rem;
@@ -50,7 +63,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-1), var(--primary-2));
+  background: linear-gradient(135deg, var(--primary-deep-red), var(--primary-saffron));
   color: #fff;
   border: none;
   padding: 0.6rem 1rem;
@@ -62,4 +75,5 @@
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-strong);
+  background: linear-gradient(135deg, #8B0D11, #E67E00);
 }

@@ -1,11 +1,11 @@
 /* Global CSS Variables */
 :root {
-  --primary-color: #2563eb;
-  --primary-dark: #1e40af;
-  --primary-light: #3b82f6;
-  --text-primary: #111827;
-  --text-secondary: #6b7280;
-  --border-color: #e5e7eb;
+  --primary-color: #B31217;
+  --primary-dark: #8B0D11;
+  --primary-light: #FF8C00;
+  --text-primary: #0B0B0B;
+  --text-secondary: #666666;
+  --border-color: #F5C542;
 }
 
 /* Navigation Bar */

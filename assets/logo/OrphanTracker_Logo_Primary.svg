@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#667eea" opacity="0.1"/>
+  
+  <!-- Shield shape (protection/safety) -->
+  <path d="M 100 30 L 155 55 L 155 110 C 155 150 100 170 100 170 C 100 170 45 150 45 110 L 45 55 Z" fill="#667eea"/>
+  
+  <!-- Heart inside shield (care/compassion) -->
+  <path d="M 100 80 C 90 70 75 75 75 85 C 75 95 85 105 100 115 C 115 105 125 95 125 85 C 125 75 110 70 100 80 Z" fill="#ffffff"/>
+  
+  <!-- Child silhouette -->
+  <circle cx="100" cy="135" r="12" fill="#764ba2"/>
+  
+  <!-- Supporting hands (community) -->
+  <path d="M 70 145 L 75 160 M 130 145 L 125 160" stroke="#764ba2" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

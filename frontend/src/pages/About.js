@@ -8,13 +8,13 @@ function About() {
   return (
     <div className="about-page">
       {/* Hero Section */}
-      <section className="about-hero text-white py-6" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)' }}>
+      <section className="about-hero text-white py-6" style={{ background: 'linear-gradient(135deg, #B31217 0%, #FF8C00 100%)' }}>
         <Container>
           <Row>
             <Col lg={12} className="text-center">
-              <h1 className="display-4 fw-bold mb-4">About Orphan Tracker Nepal</h1>
+              <h1 className="display-4 fw-bold mb-4">Ujyalo Bhavishya Abhiyan</h1>
               <p className="lead mb-0" style={{ fontSize: '1.25rem' }}>
-                Protecting vulnerable children across Nepal through monitoring, accountability, and direct action.
+                Protecting Nepal's vulnerable children through institutional monitoring, community engagement, and accountability.
               </p>
             </Col>
           </Row>

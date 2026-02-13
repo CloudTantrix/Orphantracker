@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Shield icon (simplified for favicon) -->
+  <path d="M 64 16 L 104 36 L 104 72 C 104 104 64 116 64 116 C 64 116 24 104 24 72 L 24 36 Z" fill="#667eea"/>
+  
+  <!-- Heart -->
+  <path d="M 64 52 C 56 44 44 48 44 56 C 44 64 52 72 64 78 C 76 72 84 64 84 56 C 84 48 72 44 64 52 Z" fill="#ffffff"/>
+</svg>
